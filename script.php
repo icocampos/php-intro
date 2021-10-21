@@ -26,6 +26,12 @@ if(strlen($nome) > 40)
     echo 'O nome é muito extenso';
     return;
 }
+if(!is_numeric($idade))
+{
+    echo "Informe um número para idade";
+    return;
+}
+
 
 if($idade >= 6 && $idade <= 12)
 {
